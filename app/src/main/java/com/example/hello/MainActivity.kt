@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        btnLogin.setOnClickListener {
+        btnRegisterHere.setOnClickListener {
             var userName=etUserName.text.toString()
             var password=etPassword.text.toString()
             Toast.makeText(baseContext,userName,Toast.LENGTH_LONG).show()
