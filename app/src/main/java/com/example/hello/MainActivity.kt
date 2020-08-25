@@ -47,7 +47,7 @@ class Registration : AppCompatActivity() {
 
     fun registerUser(requestBody: ApiInterface.RequestBody) {
         var apiClient = ApiClient.buildService(ApiInterface::class.java)
-        var registrationCall = apiClient.registerStudent(requestBody).also {
+        var registrationCall = apiClient.registerUser()(requestBody).also {
             it.enqueue(any = object : Callback {
                 fun onFailure(
                     call: Call,
@@ -76,11 +76,15 @@ class Registration : AppCompatActivity() {
     }
 }
 
+private fun Unit.registerUser(): Any {
+
+}
+
 private fun Any.errorBody(): Any {
     TODO("Not yet implemented")
 }
 
-private fun Any.addFormDataPart(s: String, firstName: String): Any {
+private fun Any.addFormDataPart(s: String, firstName: String) {
 
 }
 
