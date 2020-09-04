@@ -1,4 +1,5 @@
 package com.example.hello
 
-class CourseResponse {
-}
+data  class CourseResponse (
+
+)

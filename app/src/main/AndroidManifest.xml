@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".splashActivity"></activity>
+        <activity android:name=".RegistrationActivity"></activity>
+        <activity android:name=".Courses" />
+        <activity android:name=".splashActivity" />
         <activity android:name=".Login" />
         <activity android:name=".Student" />
         <activity android:name=".CourseAdapter" />
