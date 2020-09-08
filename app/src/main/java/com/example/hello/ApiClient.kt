@@ -19,7 +19,7 @@ object ApiClient {
         get() {
             val build = Retrofit.Builder()
                 .baseUrl("https://courses-service.herokuapp.com/")
-                .addConverterFactory(GsonConverterFactory.())
+                .addConverterFactory(GsonConverterFactory.()
                 .client(client)
                 .build()
             return build

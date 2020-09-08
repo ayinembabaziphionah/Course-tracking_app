@@ -80,7 +80,7 @@ private fun Unit.registerUser(): Any {
 
 }
 
-private fun Any.errorBody(): Any {
+fun Any.errorBody(): Any {
     TODO("Not yet implemented")
 }
 
